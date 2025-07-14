@@ -1,0 +1,134 @@
+:root {
+  --brand-orange: #BF4408;
+  --bg-light: #f8f8f8;
+  --text-dark: #1a1a1a;
+}
+
+.learn-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.learn-hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.learn-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: wheat;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* SECTIONS */
+.learn-section {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  background: var(--bg-light);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: scale(1.02);
+}
+
+.info-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.info-card img {
+  flex: 1;
+  max-width: 50%;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+}
+
+.info-card .text {
+  flex: 1;
+}
+
+.info-card .text h2 {
+  color: var(--brand-orange);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-card .text p,
+.info-card .text ul {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.info-card .text ul {
+  padding-left: 1.2rem;
+}
+
+.info-card .text ul li {
+  margin-bottom: 0.5rem;
+  list-style: "✔ ";
+  padding-left: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .learn-hero {
+    height: 70vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-card.reverse {
+    flex-direction: column;
+  }
+
+  .info-card img {
+    max-width: 100%;
+  }
+}

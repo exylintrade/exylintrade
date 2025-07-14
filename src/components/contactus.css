@@ -1,0 +1,118 @@
+:root {
+  --exylin-orange: #BF4408;
+  --light-bg: #ffffff;
+  --soft-gray: #f5f5f5;
+  --text-dark: #1a1a1a;
+  --border-gray: #ccc;
+}
+
+.contactus-wrapper {
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  color: var(--text-dark);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.contactus-hero {
+  position: relative;
+  padding: 5rem 2rem 3rem;
+  text-align: center;
+  background: url('../components/images/banner.png') center/cover no-repeat;
+  color: white;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactus-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.contactus-hero p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  z-index: 2;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.contactus-form-section {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contactus-card {
+  background-color: var(--soft-gray);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contactus-card:hover {
+  transform: translateY(-4px);
+}
+
+.contactus-card h2 {
+  text-align: center;
+  color: var(--exylin-orange);
+  margin-bottom: 1.5rem;
+}
+
+.contactus-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactus-form input,
+.contactus-form textarea {
+  background: white;
+  color: var(--text-dark);
+  border: 1px solid var(--border-gray);
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.contactus-form input::placeholder,
+.contactus-form textarea::placeholder {
+  color: #999;
+}
+
+.contactus-form button {
+  background-color: var(--exylin-orange);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contactus-form button:hover {
+  background-color: #a63600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contactus-hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .contactus-card {
+    padding: 1.5rem;
+  }
+}

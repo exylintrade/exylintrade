@@ -1,0 +1,16 @@
+.ship-scroll-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.ship-image {
+  height: 50px;
+  transition: transform 0.1s ease-out;
+  position: absolute;
+  left: 0;
+}

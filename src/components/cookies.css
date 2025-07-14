@@ -1,0 +1,78 @@
+.cookies-container {
+  padding: 4rem 1.5rem;
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+}
+
+.cookies-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cookies-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.cookies-date {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .cookies-title {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .cookies-wrapper {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cookies-title {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+  }
+}

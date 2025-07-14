@@ -1,0 +1,100 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.modal-box {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+  text-align: center;
+}
+
+.modal-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: #333;
+}
+
+.modal-box p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+.modal-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.modal-btn-group button,
+.modal-link-btn {
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  background-color: #BF4408;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.modal-btn-group button:hover,
+.modal-link-btn:hover {
+  background-color: #cd571c;
+}
+
+.modal-recommendation {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile Fixes */
+@media (max-width: 480px) {
+  .modal-box {
+    padding: 1.5rem;
+  }
+
+  .modal-box h3 {
+    font-size: 1.25rem;
+  }
+
+  .modal-btn-group {
+    flex-direction: column;
+  }
+
+  .modal-btn-group button,
+  .modal-link-btn {
+    width: 100%;
+  }
+}

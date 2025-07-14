@@ -1,0 +1,65 @@
+.terms-container {
+  padding: 4rem 1.5rem;
+  background-color: #fff;
+  color: #1e1e1e;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.terms-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.terms-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.terms-date {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 2.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .terms-title {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .terms-wrapper {
+    padding: 0 0.5rem;
+  }
+
+  .terms-title {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
